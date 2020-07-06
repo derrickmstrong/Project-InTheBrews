@@ -104,10 +104,14 @@ function App() {
               {brewery.city}, {brewery.state} {brewery.postal_code}{' '}
               {brewery.country}
             </p>
-            <p className='card-text'>{ brewery.phone !== '' ? (`Phone: ${brewery.phone}`) : null }</p>
-            <a href={`${brewery.website_url}`} className='card-link'>
-              Website
-            </a>
+            <p className='card-text'>
+              {brewery.phone !== '' ? `Phone: ${brewery.phone}` : null}
+            </p>
+            {brewery.website_url !== '' ? (
+              <a href={`${brewery.website_url}`} className='card-link'>
+                Website
+              </a>
+            ) : null}
           </div>
         </div>
       );
@@ -129,7 +133,6 @@ function App() {
           />
         </div>
       </div>
-
       <div className='d-flex flex-wrap justify-content-center '>
         {brewerySearch}
       </div>
