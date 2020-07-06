@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import './App.css'
 
 function App() {
   const [breweries, setBreweries] = useState([]);
@@ -43,7 +44,7 @@ function App() {
                   height='1em'
                   viewBox='0 0 16 16'
                   class='bi bi-mic-fill'
-                  fill='#ff7f00'
+                  fill='#963484'
                   xmlns='http://www.w3.org/2000/svg'>
                   <path d='M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z' />
                   <path
@@ -57,7 +58,7 @@ function App() {
                   height='1em'
                   viewBox='0 0 16 16'
                   class='bi bi-clipboard-check'
-                  fill='currentColor'
+                  fill='#db4c40'
                   xmlns='http://www.w3.org/2000/svg'>
                   <path
                     fill-rule='evenodd'
@@ -74,7 +75,7 @@ function App() {
                   height='1em'
                   viewBox='0 0 16 16'
                   class='bi bi-hourglass-bottom'
-                  fill='currentColor'
+                  fill='#99c24d'
                   xmlns='http://www.w3.org/2000/svg'>
                   <path
                     fill-rule='evenodd'
@@ -87,7 +88,7 @@ function App() {
                   height='1em'
                   viewBox='0 0 16 16'
                   class='bi bi-card-checklist'
-                  fill='currentColor'
+                  fill='#46351d'
                   xmlns='http://www.w3.org/2000/svg'>
                   <path
                     fill-rule='evenodd'
@@ -99,7 +100,7 @@ function App() {
                   />
                 </svg>
               ) : null}
-              {`${
+              {` ${
                 brewery.brewery_type.toUpperCase()[0]
               }${brewery.brewery_type.slice(1)} Brewery`}
             </h6>
@@ -129,8 +130,8 @@ function App() {
     <Fragment>
       <div className='d-flex justify-content-center'>
         <div className='d-flex flex-column my-4' style={{ width: '19rem' }}>
-          <h1 className='text-center my-4'>In the Brews</h1>
-          <h2 className='text-center my-2' style={{ fontSize: '1.25rem' }}>
+          <h1 className='text-center my-4 text-white'>In the Brews</h1>
+          <h2 className='text-center my-2 text-white' style={{ fontSize: '1.25rem' }}>
             Find the best brews near you
           </h2>
           <div class='input-group mb-3'>
@@ -142,7 +143,7 @@ function App() {
             />
             <div class='input-group-append'>
               <button
-                class='btn btn-outline-secondary'
+                class='btn btn-primary'
                 type='button'
                 onClick={handleClick}>
                 Go
