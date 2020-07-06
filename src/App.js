@@ -108,7 +108,11 @@ function App() {
               {brewery.phone !== '' ? `Phone: ${brewery.phone}` : null}
             </p>
             {brewery.website_url !== '' ? (
-              <a href={`${brewery.website_url}`} className='card-link'>
+              <a
+                href={`${brewery.website_url}`}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='card-link'>
                 Website
               </a>
             ) : null}
