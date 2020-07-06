@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/project-inthebrew/static/css/main.6556fe50.chunk.css",
+    "main.js": "/project-inthebrew/static/js/main.cdca306c.chunk.js",
+    "main.js.map": "/project-inthebrew/static/js/main.cdca306c.chunk.js.map",
+    "runtime-main.js": "/project-inthebrew/static/js/runtime-main.bf42e765.js",
+    "runtime-main.js.map": "/project-inthebrew/static/js/runtime-main.bf42e765.js.map",
+    "static/js/2.73d3000a.chunk.js": "/project-inthebrew/static/js/2.73d3000a.chunk.js",
+    "static/js/2.73d3000a.chunk.js.map": "/project-inthebrew/static/js/2.73d3000a.chunk.js.map",
+    "index.html": "/project-inthebrew/index.html",
+    "precache-manifest.6a13bf048e3b25b315e17cec9998548e.js": "/project-inthebrew/precache-manifest.6a13bf048e3b25b315e17cec9998548e.js",
+    "service-worker.js": "/project-inthebrew/service-worker.js",
+    "static/css/main.6556fe50.chunk.css.map": "/project-inthebrew/static/css/main.6556fe50.chunk.css.map",
+    "static/js/2.73d3000a.chunk.js.LICENSE.txt": "/project-inthebrew/static/js/2.73d3000a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf42e765.js",
+    "static/js/2.73d3000a.chunk.js",
+    "static/css/main.6556fe50.chunk.css",
+    "static/js/main.cdca306c.chunk.js"
+  ]
+}
