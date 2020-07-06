@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/project-inthebrews/static/css/main.6556fe50.chunk.css",
-    "main.js": "/project-inthebrews/static/js/main.cdca306c.chunk.js",
-    "main.js.map": "/project-inthebrews/static/js/main.cdca306c.chunk.js.map",
-    "runtime-main.js": "/project-inthebrews/static/js/runtime-main.7059371a.js",
-    "runtime-main.js.map": "/project-inthebrews/static/js/runtime-main.7059371a.js.map",
-    "static/js/2.73d3000a.chunk.js": "/project-inthebrews/static/js/2.73d3000a.chunk.js",
-    "static/js/2.73d3000a.chunk.js.map": "/project-inthebrews/static/js/2.73d3000a.chunk.js.map",
-    "index.html": "/project-inthebrews/index.html",
-    "precache-manifest.ee693dd7ffc341c9be6bfbd58d6d9021.js": "/project-inthebrews/precache-manifest.ee693dd7ffc341c9be6bfbd58d6d9021.js",
-    "service-worker.js": "/project-inthebrews/service-worker.js",
-    "static/css/main.6556fe50.chunk.css.map": "/project-inthebrews/static/css/main.6556fe50.chunk.css.map",
-    "static/js/2.73d3000a.chunk.js.LICENSE.txt": "/project-inthebrews/static/js/2.73d3000a.chunk.js.LICENSE.txt"
+    "main.css": "/Project-InTheBrews/static/css/main.6556fe50.chunk.css",
+    "main.js": "/Project-InTheBrews/static/js/main.cdca306c.chunk.js",
+    "main.js.map": "/Project-InTheBrews/static/js/main.cdca306c.chunk.js.map",
+    "runtime-main.js": "/Project-InTheBrews/static/js/runtime-main.0705c712.js",
+    "runtime-main.js.map": "/Project-InTheBrews/static/js/runtime-main.0705c712.js.map",
+    "static/js/2.73d3000a.chunk.js": "/Project-InTheBrews/static/js/2.73d3000a.chunk.js",
+    "static/js/2.73d3000a.chunk.js.map": "/Project-InTheBrews/static/js/2.73d3000a.chunk.js.map",
+    "index.html": "/Project-InTheBrews/index.html",
+    "precache-manifest.c6b1dc3c45a3b2b8c2d304d4e45a0a6b.js": "/Project-InTheBrews/precache-manifest.c6b1dc3c45a3b2b8c2d304d4e45a0a6b.js",
+    "service-worker.js": "/Project-InTheBrews/service-worker.js",
+    "static/css/main.6556fe50.chunk.css.map": "/Project-InTheBrews/static/css/main.6556fe50.chunk.css.map",
+    "static/js/2.73d3000a.chunk.js.LICENSE.txt": "/Project-InTheBrews/static/js/2.73d3000a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7059371a.js",
+    "static/js/runtime-main.0705c712.js",
     "static/js/2.73d3000a.chunk.js",
     "static/css/main.6556fe50.chunk.css",
     "static/js/main.cdca306c.chunk.js"
