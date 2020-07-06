@@ -5,18 +5,19 @@ function App() {
   const [breweries, setBreweries] = useState([]);
   const [search, setSearch] = useState('Alabama');
 
-  /* Search by Name, City, State */
-   const url = `https://api.openbrewerydb.org/breweries/search?query=${search}&sort=city,name`;
-   
-  
-  /* Search by State
-  const url = `https://api.openbrewerydb.org/breweries/?by_state=${search}&sort=city,name`;
-*/
+  /* Search by Name, City, State 
+  Note: In order to convert spaces to underscores in cases of searches with two names ie. New York, include the split+join string methods .split(' ').join('_') on the search parameter
+  */
+   const url = `https://api.openbrewerydb.org/breweries/search?query=${search.split(' ').join('_')}&sort=city,name`;
+ 
+  /* Search by State only
+  const url = `https://api.openbrewerydb.org/breweries?by_state=${search}`;
+ */
+
   const fetchAPI = async () => {
     let res = await fetch(url);
     let brewery = await res.json();
     setBreweries(brewery);
-    console.log(brewery);
   };
 
   useEffect(() => {
@@ -26,7 +27,7 @@ function App() {
 
   const handleClick = (e) => {
     const value = document.querySelector('#search').value;
-    setSearch(`${value}_ `); // Added underscore to ensures that the full value is received
+    setSearch(`${value}`); // Added underscore to ensures that the full value is received
     console.log(search);
   };
 
@@ -130,8 +131,12 @@ function App() {
     <Fragment>
       <div className='d-flex justify-content-center'>
         <div className='d-flex flex-column my-4' style={{ width: '19rem' }}>
-          <h1 className='text-center my-4 text-white'>In the Brews</h1>
-          <h2 className='text-center my-2 text-white' style={{ fontSize: '1.25rem' }}>
+          <h1 className='text-center my-4 text-white'>
+            <i class='fas fa-beer'></i> In the Brews
+          </h1>
+          <h2
+            className='text-center my-2 text-white'
+            style={{ fontSize: '1.25rem' }}>
             Find the best brews near you
           </h2>
           <div class='input-group mb-3'>
@@ -146,13 +151,13 @@ function App() {
                 class='btn btn-primary'
                 type='button'
                 onClick={handleClick}>
-                Go
+                GO
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className='d-flex flex-wrap justify-content-center '>
+      <div className='d-flex flex-wrap justify-content-center mb-5'>
         {brewerySearch}
       </div>
     </Fragment>
