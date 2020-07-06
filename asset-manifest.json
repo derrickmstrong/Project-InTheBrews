@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Project-InTheBrews/static/css/main.6556fe50.chunk.css",
-    "main.js": "/Project-InTheBrews/static/js/main.cdca306c.chunk.js",
-    "main.js.map": "/Project-InTheBrews/static/js/main.cdca306c.chunk.js.map",
+    "main.js": "/Project-InTheBrews/static/js/main.e5d2e840.chunk.js",
+    "main.js.map": "/Project-InTheBrews/static/js/main.e5d2e840.chunk.js.map",
     "runtime-main.js": "/Project-InTheBrews/static/js/runtime-main.0705c712.js",
     "runtime-main.js.map": "/Project-InTheBrews/static/js/runtime-main.0705c712.js.map",
     "static/js/2.73d3000a.chunk.js": "/Project-InTheBrews/static/js/2.73d3000a.chunk.js",
     "static/js/2.73d3000a.chunk.js.map": "/Project-InTheBrews/static/js/2.73d3000a.chunk.js.map",
     "index.html": "/Project-InTheBrews/index.html",
-    "precache-manifest.c6b1dc3c45a3b2b8c2d304d4e45a0a6b.js": "/Project-InTheBrews/precache-manifest.c6b1dc3c45a3b2b8c2d304d4e45a0a6b.js",
+    "precache-manifest.ad6bc890c336ee1e33b7d471e5c0985c.js": "/Project-InTheBrews/precache-manifest.ad6bc890c336ee1e33b7d471e5c0985c.js",
     "service-worker.js": "/Project-InTheBrews/service-worker.js",
     "static/css/main.6556fe50.chunk.css.map": "/Project-InTheBrews/static/css/main.6556fe50.chunk.css.map",
     "static/js/2.73d3000a.chunk.js.LICENSE.txt": "/Project-InTheBrews/static/js/2.73d3000a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0705c712.js",
     "static/js/2.73d3000a.chunk.js",
     "static/css/main.6556fe50.chunk.css",
-    "static/js/main.cdca306c.chunk.js"
+    "static/js/main.e5d2e840.chunk.js"
   ]
 }
