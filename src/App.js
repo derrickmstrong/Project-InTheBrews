@@ -4,7 +4,10 @@ function App() {
   const [breweries, setBreweries] = useState([]);
   const [search, setSearch] = useState('Alabama');
 
-  const url = `https://api.openbrewerydb.org/breweries/search?query=${search}&sort=city,name`;
+  /* Search by Name, City, State */
+   const url = `https://api.openbrewerydb.org/breweries/search?query=${search}&sort=city,name`;
+   
+  
   /* Search by State
   const url = `https://api.openbrewerydb.org/breweries/?by_state=${search}&sort=city,name`;
 */
@@ -20,8 +23,9 @@ function App() {
     return () => {};
   }, [search]);
 
-  const handleChange = (e) => {
-    setSearch(`${e.target.value}_ `); // Added underscore to ensures that the full value is received
+  const handleClick = (e) => {
+    const value = document.querySelector('#search').value;
+    setSearch(`${value}_ `); // Added underscore to ensures that the full value is received
     console.log(search);
   };
 
@@ -124,17 +128,27 @@ function App() {
   return (
     <Fragment>
       <div className='d-flex justify-content-center'>
-        <div className='d-flex flex-column my-4' style={{ width: '18rem' }}>
+        <div className='d-flex flex-column my-4' style={{ width: '19rem' }}>
           <h1 className='text-center my-4'>In the Brews</h1>
           <h2 className='text-center my-2' style={{ fontSize: '1.25rem' }}>
             Find the best brews near you
           </h2>
-          <input
-            className='d-flex justify-content-center m-2 p-2'
-            type='text'
-            placeholder='Search By Name, City, State'
-            onChange={handleChange}
-          />
+          <div class='input-group mb-3'>
+            <input
+              id='search'
+              type='text'
+              class='form-control'
+              placeholder='Search By Name, City, or State'
+            />
+            <div class='input-group-append'>
+              <button
+                class='btn btn-outline-secondary'
+                type='button'
+                onClick={handleClick}>
+                Go
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div className='d-flex flex-wrap justify-content-center '>
