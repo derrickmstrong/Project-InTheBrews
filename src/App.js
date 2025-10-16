@@ -8,7 +8,7 @@ function App() {
   /* Search by Name, City, State 
   Note: In order to convert spaces to underscores in cases of searches with two names ie. New York, include the split+join string methods .split(' ').join('_') on the search parameter
   */
-   const url = `https://api.openbrewerydb.org/breweries/search?query=${search.split(' ').join('_')}&sort=city,name`;
+   const url = `https://api.openbrewerydb.org/v1/breweries/search?query=${search.split(' ').join('_')}&sort=city,name`;
  
   /* Search by State only
   const url = `https://api.openbrewerydb.org/breweries?by_state=${search}`;
